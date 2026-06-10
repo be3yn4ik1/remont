@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Современный ремонт квартиры">
+  <defs>
+    <linearGradient id="mwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f8fd"/><stop offset="1" stop-color="#e7eefb"/></linearGradient>
+    <linearGradient id="mwin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe2ff"/><stop offset="1" stop-color="#e9f6ff"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#mwall)"/>
+  <rect y="300" width="640" height="60" fill="#d9c3a6"/>
+  <rect y="296" width="640" height="6" fill="#c9ad8a"/>
+  <!-- window -->
+  <rect x="360" y="50" width="220" height="170" rx="6" fill="url(#mwin)" stroke="#cdd9ea" stroke-width="4"/>
+  <line x1="470" y1="50" x2="470" y2="220" stroke="#cdd9ea" stroke-width="4"/>
+  <path d="M360 200 L420 150 L470 180 L520 140 L580 175 V220 H360 Z" fill="#9ecbef" opacity=".6"/>
+  <!-- sofa -->
+  <rect x="70" y="200" width="250" height="80" rx="16" fill="#2d2eaf"/>
+  <rect x="60" y="180" width="60" height="100" rx="16" fill="#3a3bc4"/>
+  <rect x="270" y="180" width="60" height="100" rx="16" fill="#3a3bc4"/>
+  <rect x="120" y="170" width="80" height="60" rx="10" fill="#ffc945"/>
+  <rect x="200" y="170" width="70" height="60" rx="10" fill="#ff8120"/>
+  <!-- coffee table -->
+  <rect x="150" y="290" width="150" height="12" rx="4" fill="#7a8aa0"/>
+  <!-- floor lamp -->
+  <rect x="345" y="150" width="6" height="150" fill="#7a8aa0"/>
+  <path d="M330 150 h36 l-8 -28 h-20 z" fill="#ffc945"/>
+  <!-- plant -->
+  <rect x="540" y="250" width="44" height="50" rx="6" fill="#0087ca"/>
+  <path d="M562 250 C540 210 540 190 560 170 C580 190 584 215 562 250 Z" fill="#3fae7a"/>
+  <path d="M562 250 C584 220 600 210 612 220 C600 240 586 250 562 250 Z" fill="#4fc78c"/>
+  <!-- wall art -->
+  <rect x="110" y="70" width="70" height="90" rx="4" fill="#fff" stroke="#cdd9ea" stroke-width="3"/>
+  <rect x="200" y="80" width="70" height="80" rx="4" fill="#fff" stroke="#cdd9ea" stroke-width="3"/>
+  <circle cx="145" cy="110" r="16" fill="#ff8120"/>
+  <path d="M205 150 l22 -30 l18 22 l14 -16 v24 z" fill="#2d2eaf" opacity=".7"/>
+</svg>

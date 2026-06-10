@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" role="img" aria-label="Квартира после ремонта — премиум">
+  <defs>
+    <linearGradient id="pmwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2540"/><stop offset="1" stop-color="#283156"/></linearGradient>
+    <linearGradient id="pmgold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe0a0"/><stop offset="1" stop-color="#ff9a3c"/></linearGradient>
+  </defs>
+  <rect width="320" height="360" fill="url(#pmwall)"/>
+  <!-- marble panels w/ gold trim -->
+  <g stroke="url(#pmgold)" stroke-width="3" fill="none" opacity=".9"><rect x="24" y="36" width="80" height="200" rx="6"/><rect x="216" y="36" width="80" height="200" rx="6"/></g>
+  <rect y="282" width="320" height="78" fill="#2a1f14"/>
+  <rect y="278" width="320" height="6" fill="#d8b274"/>
+  <!-- chandelier -->
+  <line x1="160" y1="0" x2="160" y2="34" stroke="#d8b274" stroke-width="3"/>
+  <path d="M122 34 h76 l-12 22 h-52z" fill="url(#pmgold)"/>
+  <circle cx="138" cy="68" r="6" fill="#ffe7b0"/><circle cx="160" cy="74" r="6" fill="#ffe7b0"/><circle cx="182" cy="68" r="6" fill="#ffe7b0"/>
+  <!-- velvet sofa -->
+  <rect x="40" y="206" width="170" height="70" rx="16" fill="#2d2eaf"/>
+  <rect x="32" y="186" width="46" height="90" rx="16" fill="#3a3bc4"/>
+  <rect x="186" y="186" width="46" height="90" rx="16" fill="#3a3bc4"/>
+  <rect x="74" y="182" width="46" height="42" rx="9" fill="url(#pmgold)"/>
+  <rect x="124" y="182" width="46" height="42" rx="9" fill="#ffc945"/>
+  <!-- gold coffee table -->
+  <rect x="78" y="288" width="110" height="10" rx="4" fill="url(#pmgold)"/>
+  <rect x="92" y="298" width="6" height="20" fill="#d8b274"/><rect x="168" y="298" width="6" height="20" fill="#d8b274"/>
+  <!-- art / mirror -->
+  <rect x="234" y="70" width="50" height="120" rx="24" fill="#2f3a63" stroke="url(#pmgold)" stroke-width="4"/>
+  <!-- side console + vase -->
+  <rect x="248" y="236" width="48" height="42" rx="5" fill="#241b12"/>
+  <path d="M264 236 c0 -22 16 -22 16 0z" fill="url(#pmgold)"/>
+  <!-- rug -->
+  <ellipse cx="150" cy="306" rx="150" ry="18" fill="#33406e"/>
+</svg>
