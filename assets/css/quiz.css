@@ -1,0 +1,411 @@
+/* ===== КВИЗ-КАЛЬКУЛЯТОР ===== */
+/* ===== ОБЁРТКА ===== */
+.rq-wrap {
+    background: #eef3f7;
+    border-radius: 16px;
+    padding: 32px 28px;
+    font-family: var(--font), Sans-serif;
+    color: #222;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 4px 32px rgba(0,0,0,.09);
+}
+
+/* ===== ВЕРХНЯЯ ЧАСТЬ ===== */
+.rq-top {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.rq-pretitle {
+    color: #888;
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+.rq-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.3;
+}
+.rq-progress-bar {
+    background: #d8e3ec;
+    border-radius: 8px;
+    height: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 6px;
+    overflow: hidden;
+}
+.rq-progress-fill {
+    background: linear-gradient(90deg, #f5a623, #f7c259);
+    height: 100%;
+    border-radius: 8px;
+    width: 16.6%;
+    transition: width .4s ease;
+}
+.rq-progress-text {
+    font-size: 13px;
+    color: #888;
+}
+
+/* ===== ТЕЛО ===== */
+.rq-body {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+.rq-steps {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ===== ШАГ ===== */
+.rq-step { display: none; }
+.rq-step.active {
+    display: flex;
+    gap: 10px; flex-wrap: wrap;
+}
+.rq-img-grid {
+    width: 100%;
+}
+.rq-step-num {
+    font-size: 36px;
+    font-weight: 800;
+    color: #d0dce8;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.rq-step-q {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ===== СЕТКА КАРТИНОК ===== */
+.rq-img-grid, .rq-gifts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+.rq-img-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color .2s, box-shadow .2s;
+    background: #fff;
+}
+.rq-img-card input[type="radio"] { display: none; }
+.rq-img-card img {
+    width: 100%;
+    height: 150px!important;
+    object-fit: cover;
+    display: block;
+}
+.rq-img-card span {
+    display: block;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    transition: background .2s, color .2s;
+}
+.rq-img-card:has(input:checked) {
+    border-color: #f5a623;
+    box-shadow: 0 2px 16px rgba(245,166,35,.3);
+}
+.rq-img-card:has(input:checked) span {
+    background: #f5a623;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ===== ВНУТРЕННЯЯ СТРОКА (радио + картинка) ===== */
+.rq-step-inner {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.rq-step-img {
+    width: 180px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* ===== РАДИО-КНОПКИ ===== */
+.rq-radios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+.rq-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.rq-radio-label input[type="radio"] { display: none; }
+.rq-radio-custom {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #bfcedd;
+    flex-shrink: 0;
+    position: relative;
+    transition: border-color .2s;
+}
+.rq-radio-label:has(input:checked) .rq-radio-custom {
+    border-color: #f5a623;
+}
+.rq-radio-label:has(input:checked) .rq-radio-custom::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #f5a623;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+/* ===== ПОЛЯ ===== */
+.rq-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+.rq-fields label, .rq-inputs label {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: #555;
+    gap: 4px;
+}
+.rq-fields input, .rq-inputs input {
+    border: 1.5px solid #d0dce8;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+    transition: border-color .2s;
+}
+.rq-fields input:focus, .rq-inputs input:focus { border-color: #f5a623; }
+.rq-fields em, .rq-inputs em {display: contents; color: #e74c3c; font-style: normal; }
+.rq-result-title {
+    width: 100%;
+    text-align: left;
+}
+p.rq-result-sub {
+    margin-top: 0px;
+}
+.rq-gifts {
+    grid-template-columns: repeat(4, 1fr);
+}
+.rq-gifts img {
+    height: 80px!important;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.rq-nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rq-btn {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .2s, transform .1s;
+}
+.rq-btn:active { transform: scale(.97); }
+.rq-btn-next, .rq-btn-submit {
+    background: linear-gradient(90deg, #f5a623, #f7c259);
+    color: #fff;
+}
+.rq-btn-prev {
+    background: transparent;
+    color: #888;
+    border: 1.5px solid #d0dce8;
+}
+.rq-btn-prev:hover { background: #e6eef5; }
+.rq-btn-next:hover, .rq-btn-submit:hover { opacity: .9; }
+
+/* ===== ФИНАЛЬНАЯ ФОРМА ===== */
+.rq-result-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.rq-result-sub {
+    color: #666;
+    margin-bottom: 20px;
+}
+.rq-contact-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    align-items: flex-start;
+}
+.rq-contact-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 180px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+.rq-contact-hint img { width: 100px; }
+.rq-contact-form {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.rq-contact-form p {
+    margin: 0px;
+}
+.rq-channels {
+    display: flex;
+    gap: 14px;
+    min-width: 130px;
+}
+.rq-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+.rq-btn-submit {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    font-size: 17px;
+    padding: 16px;
+    border-radius: 12px;
+}
+.rq-policy {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 10px;
+}
+.rq-policy a { color: #aaa; }
+
+/* ===== САЙДБАР ===== */
+.rq-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+    text-align: center;
+}
+.rq-step-inner {
+    width: 100%;
+}
+.rq-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%!important;
+    object-fit: cover;
+    border: 4px solid #eef3f7;
+    margin-bottom: 12px;
+}
+.rq-sidebar-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.rq-sidebar-role {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 14px;
+}
+.rq-sidebar-text {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.rq-sidebar-await {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+.rq-sidebar-bonus {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #222c3c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 12.5px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.rq-bonus-icon { font-size: 20px; flex-shrink: 0; }
+
+/* ===== УСПЕХ ===== */
+.rq-success {
+    text-align: center;
+    padding: 40px 0;
+}
+.rq-success-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #f5a623, #f7c259);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    margin: 0 auto 20px;
+}
+.rq-success h3 { font-size: 22px; margin-bottom: 8px; }
+.rq-success p { color: #777; }
+
+/* ===== Встраивание в hero (компактный режим) ===== */
+.hero__quiz .rq-wrap{max-width:none;padding:24px 22px}
+.hero__quiz .rq-sidebar{display:none}
+.hero__quiz .rq-title{font-size:21px}
+.hero__quiz .rq-img-card img{height:108px!important}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 800px) {
+    .rq-body { flex-direction: column; }
+    .rq-sidebar { width: 100%; }
+    .rq-step-inner { flex-direction: column; }
+    .rq-step-img { width: 140px; }
+    .rq-contact-row, .rq-contact-form { flex-direction: column; }
+    .rq-img-grid, .rq-gifts { grid-template-columns: repeat(2,1fr); }
+    .rq-contact-hint { display: none;}
+    .rq-contact-form .rq-channels p { width: 100%;}
+.rq-contact-form .rq-channels { flex-wrap: wrap;}
+.rq-contact-form > p {
+    font-size: 14px;
+}
+}
+@media (max-width: 480px) {
+    .rq-btn{flex: 1;margin-top: 10px;}
+    .rq-wrap { padding: 18px 12px; }
+    .rq-title { font-size: 18px; }
+    .rq-img-grid, .rq-gifts { grid-template-columns: 1fr 1fr; }
+    .rq-img-card img { height: 110px!important; }
+}

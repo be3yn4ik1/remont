@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://remount-chameleon.ru/sitemap.xml
