@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Ремонт ванной в квартире">
+  <defs>
+    <linearGradient id="btile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf4fb"/><stop offset="1" stop-color="#d7e8f5"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#btile)"/>
+  <!-- tile grid -->
+  <g stroke="#c7dcec" stroke-width="2">
+    <line x1="0" y1="90" x2="640" y2="90"/><line x1="0" y1="180" x2="640" y2="180"/><line x1="0" y1="270" x2="640" y2="270"/>
+    <line x1="160" y1="0" x2="160" y2="300"/><line x1="320" y1="0" x2="320" y2="300"/><line x1="480" y1="0" x2="480" y2="300"/>
+  </g>
+  <rect y="300" width="640" height="60" fill="#cdd9ea"/>
+  <!-- bathtub -->
+  <rect x="60" y="220" width="300" height="90" rx="40" fill="#ffffff" stroke="#bcd0e3" stroke-width="4"/>
+  <rect x="78" y="232" width="264" height="60" rx="28" fill="#dff0fb"/>
+  <rect x="60" y="300" width="300" height="20" rx="6" fill="#e7eefb"/>
+  <!-- faucet -->
+  <path d="M70 200 v-24 h22 v10 h-10 v38" fill="none" stroke="#0087ca" stroke-width="6" stroke-linecap="round"/>
+  <!-- sink + mirror -->
+  <rect x="430" y="240" width="150" height="20" rx="6" fill="#ffffff" stroke="#bcd0e3" stroke-width="3"/>
+  <rect x="470" y="260" width="70" height="50" rx="8" fill="#eef5fb" stroke="#bcd0e3" stroke-width="3"/>
+  <ellipse cx="505" cy="250" rx="34" ry="10" fill="#dff0fb"/>
+  <path d="M505 232 v-18" stroke="#0087ca" stroke-width="6" stroke-linecap="round"/>
+  <rect x="455" y="70" width="100" height="120" rx="50" fill="#cfeaff" stroke="#ffffff" stroke-width="6"/>
+  <!-- plant + towel -->
+  <rect x="380" y="250" width="30" height="60" rx="6" fill="#ff8120"/>
+  <path d="M395 250 c-16 -28 -16 -44 0 -58 c16 14 16 30 0 58z" fill="#3fae7a"/>
+  <rect x="120" y="80" width="70" height="110" rx="8" fill="#ffc945" opacity=".85"/>
+  <rect x="130" y="80" width="50" height="110" fill="#ff8120" opacity=".5"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" role="img" aria-label="Квартира после ремонта — бизнес">
+  <defs>
+    <linearGradient id="bz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2fb"/><stop offset="1" stop-color="#dde6f6"/></linearGradient>
+    <linearGradient id="bzac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d2eaf"/><stop offset="1" stop-color="#0087ca"/></linearGradient>
+  </defs>
+  <rect width="320" height="360" fill="url(#bz)"/>
+  <!-- panelled accent wall -->
+  <rect x="170" y="0" width="150" height="286" fill="url(#bzac)" opacity=".12"/>
+  <g stroke="#c3cfe4" stroke-width="2" fill="none"><rect x="186" y="30" width="50" height="230"/><rect x="244" y="30" width="50" height="230"/></g>
+  <rect y="284" width="320" height="76" fill="#3a2c1e"/>
+  <rect y="280" width="320" height="6" fill="#caa46a"/>
+  <!-- modular sofa -->
+  <rect x="24" y="196" width="180" height="74" rx="16" fill="url(#bzac)"/>
+  <rect x="16" y="176" width="48" height="94" rx="16" fill="#3a3bc4"/>
+  <rect x="180" y="176" width="36" height="94" rx="14" fill="#3a3bc4"/>
+  <rect x="60" y="170" width="48" height="44" rx="9" fill="#ffc945"/>
+  <rect x="112" y="170" width="48" height="44" rx="9" fill="#ff8120"/>
+  <!-- designer pendant lights -->
+  <line x1="120" y1="0" x2="120" y2="40" stroke="#caa46a" stroke-width="2"/>
+  <line x1="150" y1="0" x2="150" y2="60" stroke="#caa46a" stroke-width="2"/>
+  <circle cx="120" cy="44" r="10" fill="#ffd98a"/><circle cx="150" cy="64" r="10" fill="#ffd98a"/>
+  <!-- shelving with decor -->
+  <rect x="40" y="86" width="110" height="8" rx="3" fill="#caa46a"/>
+  <rect x="40" y="120" width="110" height="8" rx="3" fill="#caa46a"/>
+  <rect x="52" y="96" width="20" height="24" rx="3" fill="#0087ca"/>
+  <rect x="84" y="100" width="16" height="20" rx="3" fill="#ff8120"/>
+  <circle cx="128" cy="108" r="9" fill="#3fae7a"/>
+  <!-- rug + table -->
+  <ellipse cx="110" cy="306" rx="124" ry="18" fill="#2f3a63" opacity=".18"/>
+  <rect x="58" y="278" width="110" height="12" rx="4" fill="#caa46a"/>
+  <!-- tall plant -->
+  <rect x="266" y="232" width="36" height="52" rx="6" fill="#2d2eaf"/>
+  <path d="M284 232 c-22 -40 -22 -64 0 -86 c22 22 22 46 0 86z" fill="#3fae7a"/>
+  <path d="M284 232 c20 -26 40 -34 56 -28 c-12 26 -34 36 -56 28z" fill="#4fc78c"/>
+</svg>

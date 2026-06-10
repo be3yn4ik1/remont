@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Ремонт элитных квартир">
+  <defs>
+    <linearGradient id="ewall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2540"/><stop offset="1" stop-color="#26305a"/></linearGradient>
+    <linearGradient id="egold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd98a"/><stop offset="1" stop-color="#ff8120"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#ewall)"/>
+  <!-- wainscoting panels -->
+  <g stroke="#3a4673" stroke-width="3" fill="none" opacity=".9">
+    <rect x="40" y="60" width="120" height="150" rx="6"/>
+    <rect x="180" y="60" width="120" height="150" rx="6"/>
+    <rect x="470" y="60" width="120" height="150" rx="6"/>
+  </g>
+  <rect y="300" width="640" height="60" fill="#3a2c1e"/>
+  <rect y="296" width="640" height="6" fill="#caa46a"/>
+  <!-- chandelier -->
+  <line x1="320" y1="0" x2="320" y2="40" stroke="#caa46a" stroke-width="3"/>
+  <path d="M270 40 h100 l-16 26 h-68 z" fill="url(#egold)"/>
+  <circle cx="288" cy="80" r="7" fill="#ffe7b0"/><circle cx="320" cy="86" r="7" fill="#ffe7b0"/><circle cx="352" cy="80" r="7" fill="#ffe7b0"/>
+  <!-- sofa (velvet) -->
+  <rect x="210" y="215" width="220" height="80" rx="18" fill="#2d2eaf"/>
+  <rect x="200" y="195" width="56" height="100" rx="18" fill="#3a3bc4"/>
+  <rect x="384" y="195" width="56" height="100" rx="18" fill="#3a3bc4"/>
+  <rect x="262" y="200" width="56" height="44" rx="10" fill="url(#egold)"/>
+  <rect x="324" y="200" width="56" height="44" rx="10" fill="#ffc945"/>
+  <!-- gold side tables -->
+  <rect x="120" y="250" width="60" height="46" rx="6" fill="#2b2138"/>
+  <rect x="120" y="246" width="60" height="8" rx="3" fill="url(#egold)"/>
+  <rect x="460" y="250" width="60" height="46" rx="6" fill="#2b2138"/>
+  <rect x="460" y="246" width="60" height="8" rx="3" fill="url(#egold)"/>
+  <!-- vases / lamps -->
+  <path d="M140 246 c0 -18 20 -18 20 0 z" fill="url(#egold)"/>
+  <path d="M480 246 c0 -18 20 -18 20 0 z" fill="#ffc945"/>
+  <!-- large mirror -->
+  <rect x="488" y="70" width="84" height="130" rx="40" fill="#2f3a63" stroke="url(#egold)" stroke-width="5"/>
+  <!-- rug -->
+  <ellipse cx="320" cy="320" rx="190" ry="20" fill="#33406e"/>
+</svg>

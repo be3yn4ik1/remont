@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" role="img" aria-label="Квартира после ремонта — эконом">
+  <defs><linearGradient id="ec" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5f8fd"/><stop offset="1" stop-color="#e9eff9"/></linearGradient></defs>
+  <rect width="320" height="360" fill="url(#ec)"/>
+  <rect y="288" width="320" height="72" fill="#dcc7aa"/>
+  <rect y="284" width="320" height="6" fill="#caaf8c"/>
+  <!-- window -->
+  <rect x="200" y="50" width="96" height="120" rx="4" fill="#cfeaff" stroke="#cdd9ea" stroke-width="4"/>
+  <line x1="248" y1="50" x2="248" y2="170" stroke="#cdd9ea" stroke-width="4"/>
+  <!-- sofa -->
+  <rect x="30" y="210" width="150" height="60" rx="12" fill="#2d2eaf"/>
+  <rect x="22" y="194" width="40" height="76" rx="12" fill="#3a3bc4"/>
+  <rect x="150" y="194" width="40" height="76" rx="12" fill="#3a3bc4"/>
+  <rect x="70" y="186" width="50" height="40" rx="8" fill="#ffc945"/>
+  <!-- table -->
+  <rect x="60" y="282" width="100" height="8" rx="3" fill="#9aa6b8"/>
+  <!-- shelf + art -->
+  <rect x="40" y="80" width="120" height="10" rx="3" fill="#c8915a"/>
+  <rect x="56" y="56" width="34" height="24" rx="3" fill="#ff8120"/>
+  <rect x="100" y="50" width="24" height="30" rx="3" fill="#0087ca"/>
+  <!-- plant -->
+  <rect x="266" y="240" width="34" height="44" rx="5" fill="#0087ca"/>
+  <path d="M283 240 c-16 -28 -16 -46 0 -60 c16 14 16 32 0 60z" fill="#3fae7a"/>
+</svg>

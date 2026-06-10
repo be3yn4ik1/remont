@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360" role="img" aria-label="Квартира после ремонта — комфорт">
+  <defs><linearGradient id="cf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef4fc"/><stop offset="1" stop-color="#dfeaf8"/></linearGradient></defs>
+  <rect width="320" height="360" fill="url(#cf)"/>
+  <!-- accent wall -->
+  <rect x="0" y="0" width="150" height="288" fill="#e7eefb"/>
+  <rect y="286" width="320" height="74" fill="#d6bf9e"/>
+  <rect y="282" width="320" height="6" fill="#c3a880"/>
+  <!-- window with drape -->
+  <rect x="196" y="44" width="104" height="130" rx="4" fill="#cfeaff" stroke="#cdd9ea" stroke-width="4"/>
+  <line x1="248" y1="44" x2="248" y2="174" stroke="#cdd9ea" stroke-width="4"/>
+  <rect x="190" y="40" width="16" height="140" rx="6" fill="#ff8120" opacity=".8"/>
+  <rect x="294" y="40" width="16" height="140" rx="6" fill="#ff8120" opacity=".8"/>
+  <!-- sofa + cushions -->
+  <rect x="26" y="200" width="170" height="68" rx="14" fill="#2d2eaf"/>
+  <rect x="18" y="182" width="44" height="86" rx="14" fill="#3a3bc4"/>
+  <rect x="160" y="182" width="44" height="86" rx="14" fill="#3a3bc4"/>
+  <rect x="62" y="176" width="46" height="42" rx="9" fill="#ffc945"/>
+  <rect x="112" y="176" width="46" height="42" rx="9" fill="#ff8120"/>
+  <!-- coffee table + rug -->
+  <ellipse cx="110" cy="306" rx="120" ry="16" fill="#cdd9ea"/>
+  <rect x="64" y="280" width="96" height="10" rx="4" fill="#7a8aa0"/>
+  <!-- floor lamp -->
+  <rect x="214" y="190" width="6" height="96" fill="#7a8aa0"/>
+  <path d="M200 190 h36 l-9 -26 h-18z" fill="#ffc945"/>
+  <!-- art -->
+  <rect x="44" y="60" width="40" height="56" rx="4" fill="#fff" stroke="#cdd9ea" stroke-width="3"/>
+  <rect x="92" y="60" width="40" height="56" rx="4" fill="#fff" stroke="#cdd9ea" stroke-width="3"/>
+  <circle cx="64" cy="84" r="12" fill="#0087ca"/>
+  <path d="M96 110 l14 -22 l12 16 v6z" fill="#2d2eaf" opacity=".7"/>
+</svg>
