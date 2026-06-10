@@ -1,4 +1,10 @@
+# СТЕНД/ПРЕВЬЮ: сайт закрыт от индексации.
+# Перед запуском заменить на блок ниже (см. DEPLOY.md).
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://remount-chameleon.ru/sitemap.xml
+# --- ВЕРСИЯ ДЛЯ ЗАПУСКА (раскомментировать при выходе в прод) ---
+# User-agent: *
+# Allow: /
+#
+# Sitemap: https://remount-chameleon.ru/sitemap.xml
